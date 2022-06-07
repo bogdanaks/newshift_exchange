@@ -1,0 +1,10 @@
+.env
+!/uploads/.gitkeep
+/uploads
+node_modules/
+tmp/
+.idea
+### VisualStudioCode ###
+.vscode/*
+.jshintrc
+/dist

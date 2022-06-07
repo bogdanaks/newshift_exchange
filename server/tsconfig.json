@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["es6", "dom"],
+    "types": ["reflect-metadata"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "removeComments": true,
+    "sourceMap": false,
+    "composite": true,
+    "incremental": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "resolveJsonModule": true,
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "paths": {
+      "models": ["./src/models/*"],
+      "api": ["./src/api/*"],
+      "utils": ["./src/utils/*"],
+      "types": ["./src/types/*"],
+      "actions": ["./src/actions/*"],
+      "middlewares": ["./src/middlewares/*"],
+      "libs": ["./src/libs/*"],
+      "@mailer": ["./src/mailer/index.ts"],
+      "@config": ["./src/config/index.ts"],
+    },
+  },
+  "include": ["./src/**/*", "./src/**/*.json"],
+  "exclude": [
+    "**/*.d.ts",
+    "./node_modules",
+    "dist"
+  ]
+}
